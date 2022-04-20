@@ -177,24 +177,6 @@ app.post('/api/candidate', ({ body }, res) => {
     });
 });
 
-//  {
-//     if (err) {
-//         console.log(err);
-//     }
-//     console.log(result);
-// });
-
-// const sql = `INSERT INTO candidates (id, first_name, last_name, industry_connected)
-//             VALUES (?,?,?,?)`;
-// const params = [1, 'Ronald', 'Firbank', 1];
-
-// db.query(sql, params, (err, results) => {
-//     if (err) {
-//         console.log(err);
-//     }
-//     console.log(results);
-// });
-
 app.use((req,res) => {
     res.status(404).end();
 });
